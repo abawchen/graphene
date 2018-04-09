@@ -11,6 +11,7 @@ from .types import (
     Schema,
     Scalar,
     String, ID, Int, Float, Boolean,
+    Date, DateTime, Time,
     JSONString,
     UUID,
     List, NonNull,
@@ -34,7 +35,7 @@ from .utils.resolve_only_args import resolve_only_args
 from .utils.module_loading import lazy_import
 
 
-VERSION = (2, 0, 1, 'final', 0)
+VERSION = (2, 1, 0, 'final', 0)
 
 __version__ = get_version(VERSION)
 
@@ -54,6 +55,9 @@ __all__ = [
     'Float',
     'Enum',
     'Boolean',
+    'Date',
+    'DateTime',
+    'Time',
     'JSONString',
     'UUID',
     'List',
